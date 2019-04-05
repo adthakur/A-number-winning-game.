@@ -17,15 +17,23 @@ game_over= False
 while not game_over:                       
     if number == winning_number:
         print(f"Wowww..Your win this in {guess}th attempt!!")
-        game_over=True                            
+        
+        game_over=True        
+        
         #Here the game will stop once user guess the winning number
     else:
         if number < winning_number:
-            print("ohhh..sorry its quite low :( Try again.")  
+        
+            print("ohhh..sorry its quite low :( Try again.")
+            
             #how far from the winning number.
         else:
             print("ohhh..sorry its high :) try again"
-            guess+=1                                  
-            #add number of attempts done.
-            number=int(input("Guess the number again:"))  
+            
+            guess+=1    
+            
+            #add number of attempts done
+            
+            number=int(input("Guess the number again:")) 
+            
             #the game will continuee until user don't guess the winning number.
